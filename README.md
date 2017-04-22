@@ -35,45 +35,20 @@
 ```json
 
 {
-    "author": {
-        "name": "fengmk2",
-        "url": "http://fengmk2.com"
+    "name": "cnpm",
+    "version": "4.5.0",
+    "description": "cnpm: npm client for cnpmjs.org",
+    "main": "bin/cnpm",
+    "scripts": {
+        "test": "mocha -t 120000 test/*.test.js",
+        "lint": "jshint .",
+        "ci": "npm run lint && npm run test",
+        "autod": "autod"
     },
+    "preferGlobal": true,
     "bin": {
         "cnpm": "bin/cnpm"
     },
-    "bugs": {
-        "url": "https://github.com/cnpm/cnpm/issues"
-    },
-    "ci": {
-        "version": "4, 6, 7"
-    },
-    "contributors": [
-        {
-            "name": "fengmk2",
-            "url": "https://github.com/fengmk2"
-        },
-        {
-            "name": "dead_horse",
-            "url": "https://github.com/dead-horse"
-        },
-        {
-            "name": "Jakukyo Friel",
-            "url": "https://github.com/weakish"
-        },
-        {
-            "name": "Zhonglei Qiu",
-            "url": "https://github.com/qiu8310"
-        },
-        {
-            "name": "popomore",
-            "url": "https://github.com/popomore"
-        },
-        {
-            "name": "alsotang",
-            "url": "https://github.com/alsotang"
-        }
-    ],
     "dependencies": {
         "auto-correct": "^1.0.0",
         "bagpipe": "^0.3.5",
@@ -88,7 +63,6 @@
         "open": "^0.0.5",
         "urllib": "^2.17.0"
     },
-    "description": "cnpm: npm client for cnpmjs.org",
     "devDependencies": {
         "autod": "^2.7.1",
         "coffee": "^3.3.0",
@@ -99,49 +73,28 @@
         "rimraf": "^2.5.4",
         "should": "5"
     },
-    "directories": {},
-    "dist": {
-        "shasum": "848ee6a499af2528e199e6bde29d9c1cace564a6",
-        "tarball": "https://registry.npmjs.org/cnpm/-/cnpm-4.5.0.tgz"
-    },
-    "engines": {
-        "node": ">= 4.0.0"
-    },
-    "gitHead": "b4d22d9c06cb7fe33623684ff3273185186ff2cc",
     "homepage": "https://github.com/cnpm/cnpm",
-    "keywords": [
-        "cnpm",
-        "npm",
-        "npminstall"
-    ],
-    "license": "MIT",
-    "main": "bin/cnpm",
-    "maintainers": [
-        {
-            "name": "alsotang"
-        },
-        {
-            "name": "dead_horse"
-        },
-        {
-            "name": "fengmk2"
-        }
-    ],
-    "name": "cnpm",
-    "optionalDependencies": {},
-    "preferGlobal": true,
     "repository": {
         "type": "git",
         "url": "git://github.com/cnpm/cnpm.git",
         "web": "https://github.com/cnpm/cnpm"
     },
-    "scripts": {
-        "autod": "autod",
-        "ci": "npm run lint && npm run test",
-        "lint": "jshint .",
-        "test": "mocha -t 120000 test/*.test.js"
+    "bugs": {
+        "url": "https://github.com/cnpm/cnpm/issues"
     },
-    "version": "4.5.0"
+    "keywords": [
+        "cnpm",
+        "npm",
+        "npminstall"
+    ],
+    "engines": {
+        "node": ">= 4.0.0"
+    },
+    "ci": {
+        "version": "4, 6, 7"
+    },
+    "author": "fengmk2 <m@fengmk2.com> (http://fengmk2.com)",
+    "license": "MIT"
 }
 ```
 
